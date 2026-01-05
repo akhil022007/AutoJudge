@@ -27,39 +27,6 @@ AutoJudge is a machine learning–based system that predicts the difficulty of p
 
 ---
 
-## Project Structure
-
-autojudge/
-│
-├── app/
-│ ├── predict_rf.py
-│ ├── predict_score.py
-│ └── run.py
-│
-├── data/
-│ └── problems_data.jsonl
-│
-├── features/
-│ └── features.py
-│
-├── training/
-│ ├── data.py
-│ ├── train_classification.py
-│ ├── train_regression.py
-│ └── train_score_calibration.py
-│
-├── models/
-│ ├── clf_rf.pkl
-│ ├── reg_score.pkl
-│ ├── score_calibration.pkl
-│ ├── tfidf_cls.pkl
-│ └── tfidf_score.pkl
-│
-├── requirements.txt
-└── README.md
-
-
----
 
 ## Steps to Run the Project Locally
 
@@ -67,26 +34,33 @@ autojudge/
 ```bash
 git clone https://github.com/akhil022007/AutoJudge.git
 cd AutoJudge
-
-2. Install Dependencies
-
+###2.Activating env
 Linux / macOS
 
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
 
 Windows
 
 python -m venv venv
 venv\Scripts\activate
+
+3. Install Dependencies
+
+Linux / macOS
+
 pip install -r requirements.txt
 
-3. Run the Application
+Windows
+
+
+pip install -r requirements.txt
+
+###3. Run the Application
 
 streamlit run app/run.py
 
-Web Interface
+##Web Interface
 
 Users can paste a programming problem description into the web interface and click Predict to receive:
 
@@ -104,5 +78,6 @@ Report Link:
 
 Name: Ragala Akhil
 Enrollment Number: 24114072
+
 
 
