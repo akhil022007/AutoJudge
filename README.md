@@ -144,7 +144,7 @@ Score Calibration: Class-aware calibration to align scores with difficulty class
 ### 1.Download the Project
 
 ```bash
-git clone https://github.com/<akhil022007>/AutoJudge.git
+git clone https://github.com/akhil022007/AutoJudge.git
 cd AutoJudge
 ```
 ### 2.Create Virtual Environment
@@ -174,7 +174,7 @@ pip install -r requirements.txt
 ```
 ### 5.Run the Application
 ```bash
-pip install -r requirements.txt
+streamlit run app/run.py
 ```
 
 ## Evaluation
@@ -224,4 +224,5 @@ Enrollment Number: 24114072
 Institute: IIT Roorkee
 
 Branch - Computer Science and Engineering
+
 
